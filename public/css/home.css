@@ -1,0 +1,138 @@
+/* Nav */
+nav {
+  background-color: rgba(255, 82, 82, 0.7);
+}
+
+nav ul a{
+  font-size: 18px;
+  margin-right: 20px;
+}
+ nav .brand-logo {
+  font-size: 25px;
+}
+ .brand-logo img {
+  margin: 10px 10px 0 20px;
+  vertical-align: text-bottom;
+  width: 100%;
+  max-width: 40px;
+}
+
+/* Video */
+video {
+  padding-top: -64px;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  background-position: center;
+}
+
+.video {
+  height: 100vh;
+  margin-top: -65px;
+}
+/* Join */
+section#join{
+  background-color:#ff5252;
+  color: white;
+  padding: 20px;
+}
+
+section#join p{
+  font-size: 28px;
+  font-weight: 100;
+}
+
+section#join input{
+  background-color: white;
+  padding-left: 5px;
+}
+/* Us */
+section#us{
+  padding: 20px;
+}
+
+section#us h4{
+  color:#ff5252;
+}
+
+section#us p{
+  margin-top: 0;
+}
+
+.icon{
+  margin: 0 auto;
+  max-width: 40px;
+  width: 100%;
+}
+/* Support */
+section#support{
+  padding: 20px;
+}
+section#support h4{
+  color:#ff5252;
+}
+
+section#support p{
+  font-size: 27px;
+  font-weight: 100;
+}
+
+section#support input, section#support textarea{
+  background-color: white;
+  padding-left: 5px;
+  border-bottom: 0;
+}
+
+section#support .btn{
+  background-color:#ff5252;
+}
+
+section#support .btn:hover, section#support .btn:active, section#support .btn:focus {
+  background: white;
+  color: #ff5252;
+}
+
+/* Download */
+section#download{
+  padding-top: 22px;
+  padding-bottom: 11px;
+  background-color: #ff5252;
+}
+section#download h4{
+  color:#ff5252;
+}
+
+section#download p{
+  font-size: 27px;
+  font-weight: 100;
+}
+
+footer{
+  background-color: #333333;
+  padding: 15px;
+  color: white;
+
+}
+
+button{
+  width: 100%;
+}
+
+.social{
+  color: white;
+  margin-right: 20px;
+}
+
+/* Responsive video*/
+@media only screen and (max-width: 600px) {
+video {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+}
+}
