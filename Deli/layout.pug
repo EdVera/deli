@@ -1,0 +1,34 @@
+mixin nav(href, name)
+  li
+    a.menu-link(href='#content') INCIO
+  li
+    a.menu-link(href='#join') UNIRTE
+  li
+    a.menu-link(href='#us') NOSOTROS
+  li
+    a.menu-link(href='#support') SOPORTE
+  li
+    a.menu-link(href='#download') DESCARGAR
+  li
+    a.menu-link(href='#') INICIAR SESIÓN
+doctype html
+html(lang='es')
+  head
+    meta(charset='utf-8')
+    link(rel='icon' type='image/pmg' href='public/img/favicon/favicon.png')
+    title DeliDeli
+    link(href='public/plugins/materialize/css/materialize.min.css' rel='stylesheet')
+    link(href='public/css/home.css' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet')
+    link(href='css/landing.css' rel='stylesheet')
+  body
+    #content
+      include nav.pug
+    block content
+    include footer.pug
+    //-Css Async
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" async)
+    //-Scripts
+    script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+    script(src="public/plugins/materialize/js/materialize.min.js")
+    script(src="public/js/home.js")

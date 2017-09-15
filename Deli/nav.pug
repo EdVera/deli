@@ -1,0 +1,14 @@
+nav.menu.hide-on-med-and-up
+  a.button-collapse(href='#' data-activates='mobile-nav')
+    i.fa.fa-bars
+  a.brand-logo
+    img(src='public/img/logo/logo.png')
+  ul#mobile-nav.side-nav
+    +nav
+
+.navbar-fixed
+  nav.menu.hide-on-small-only
+    a.brand-logo
+      img(src='public/img/logo/logo.png')
+    ul.right.menu-options
+      +nav

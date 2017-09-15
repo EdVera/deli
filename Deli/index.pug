@@ -1,0 +1,89 @@
+extends layout.pug
+block content
+  //-Start [Video]
+  section.video
+    video#video(playsinline="" autoplay="" muted="" loop="")
+      source(src="public/video/deli_deli_comercial.mp4" type="video/mp4")
+  //-End [Video]
+
+  //-Start [Join]
+  section#join
+    h3.center ¿Te gustaría unirte?
+    p.center Ingresa tus datos y nosotros nos comunicaremos contigo
+    .row
+      .input-field.col.m4.s12
+        input(type="text" placeholder="Restaurante")
+      .input-field.col.m5.s12
+        input(type="email" placeholder="Correo Electrónico")
+      .input-field.col.m3.s12
+        button.btn.waves-effect.waves-light(type="submit" style="color:#ff5252; background-color:white; height:45px") Enviar
+  //-End [Join]
+
+  //-Start [Us]
+  section#us.white
+    h4.center Nosotros
+    .container
+      .row
+        .col.m6.s12
+          .col.s2
+            img.icon(src='public/img/icons/logo_pequenio.png')
+          .col.s10
+            p Te acercamos a los mejores restaurantes de tu zona de acuerdo a la distancia a la que te encuentres de ellos para que puedas solicitar comida a domicilio de manera fácil, cómoda y segura.
+        .col.m6.s12
+          .col.s2
+            img.icon(src='public/img/icons/motorcycle.png')
+          .col.s10
+            p Buscamos que tu experiencia de ordenar alimentos a domicilio esté cubierta de principio a fin, es por esto que contamos con un servicio integral que inicia con nuestra App y finaliza al recibir tus alimentos directo en tu domicilio.
+        .col.m6.s12
+          .col.s2
+            img.icon(src='public/img/icons/food.png')
+          .col.s10
+            p Queremos brindarte la opción de reservar una mesa en tu restaurante favorito para aquellos días y fechas especiales en compañía de tu familia, amigos o pareja, teniendo la certeza de que a tu llegada tu mesa estará lista.
+        .col.m6.s12
+          .col.s2
+            img.icon(src='public/img/icons/cutlery.png')
+          .col.s10
+            p Con DeliDeli también podrás ordenar alimentos para ser recogidos en mostrador o ser consumidos dentro de los mismos restaurantes, evitando así filas y listas de espera. De esta manera el proceso de espera se vuelve rápido, sencillo y eficiente.
+        .col.m6.s12
+          .col.s2
+            img.icon(src='public/img/icons/corazon.png')
+          .col.s10
+            p Sabemos que tienes gustos específicos y que no es cómodo tener que repetir tu pedido una y otra vez, es por ello que te facilitamos elegir tu propia lista de restaurantes y platillos favoritos para poder ordenarlos justamente como a ti te gustan de manera rápida y sencilla.
+        .col.m6.s12
+          .col.s2
+            img.icon(src='public/img/icons/promocion.png')
+          .col.s10
+            p Para ofrecerte la mejor y más completa experiencia ponemos a tu alcance nuestra sección de promociones, en la que encontrarás diariamente nuevas ofertas exclusivas de los restaurantes de tu zona.
+  //-End [Us]
+
+  //-Start [Support]
+  section#support(style="background-color:#faf5f5")
+    .container
+      h4.center Soporte
+      p.center ¿Tienes alguna duda o comentario? Déjanos un mensaje y en breve nos comunicaremos contigo
+      .row
+        .input-field.col.s12
+          input(type="text" placeholder="Restaurante")
+        .input-field.col.s12
+          input(type="email" placeholder="Correo Electrónico")
+        .input-field.col.s12
+          textarea.materialize-textarea(placholder="Mensaje")
+        .input-field.col.s12
+          button.btn.waves-effect.waves-light(type=submit) Enviar
+  //-End [Support]
+
+  //-Start [Download]
+  section#download
+    .container
+      .row.center-align
+        .col.s12.l6
+          img(src="public/img/icons/restaurante_deli.png" height="350px")
+        .col.s12.l6(style="margin-top:75px")
+          .col.s12.white-text.hide-on-small-only(style="padding-bottom:25px;font-size:40px") Descarga la app
+          .col.s12.white-text.hide-on-med-and-up(style="padding-bottom:25px;font-size:25px") Descarga la app
+          .col.s12.l6
+            a: img(src="public/img/icons/google-badge.png" height="60px")
+          .col.s12.l6
+          a: img(src="public/img/icons/app-badge.svg" height="60px")
+
+  //-End [Download]
